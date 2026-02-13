@@ -13,6 +13,6 @@ public class User extends BaseModel{
     public String name;
     public String email;
     public String password;
-    @OneToMany
+    @OneToMany(mappedBy = "user")
     public List<Booking> bookings;
 }

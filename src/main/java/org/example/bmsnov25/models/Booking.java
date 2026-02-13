@@ -11,12 +11,13 @@ import java.util.List;
 @Entity
 public class Booking extends BaseModel{
     @ManyToOne
+    @JoinColumn(name = "user_id")
     private User user;
     private Date bookingDate;
     @OneToMany
     private List<Payment> payments;
     @ManyToOne
-    private Show show;
+    private Shows show;
     //@Enumerated(value = EnumType.ORDINAL)
     @Enumerated(value = EnumType.STRING)
     private BookingStatus bookingStatus;

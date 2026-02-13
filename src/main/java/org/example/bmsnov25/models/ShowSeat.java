@@ -13,7 +13,7 @@ import java.util.Date;
 @Entity
 public class ShowSeat extends BaseModel{
     @ManyToOne
-    private Show show;
+    private Shows show;
     @ManyToOne
     private Seat seat;
     private ShowSeatStatus status;
