@@ -23,7 +23,7 @@ public class Booking extends BaseModel{
     private BookingStatus bookingStatus;
     @OneToMany
     private List<ShowSeat> showSeats;
-    private int amount;
+    private double amount;
 }
 
 // 1 user -> M booking
